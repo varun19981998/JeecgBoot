@@ -12,7 +12,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 @SpringBootApplication
 @EnableFeignClients
 public class JeecgDemoCloudApplication implements CommandLineRunner {
-    @Autowired
+    @Autowired//inject dependencies automatically
     private RedisTemplate<String, Object> redisTemplate;
 
     public static void main(String[] args) {
